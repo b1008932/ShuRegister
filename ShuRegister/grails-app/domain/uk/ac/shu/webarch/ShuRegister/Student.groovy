@@ -22,8 +22,8 @@ class Student {
   ]
 
   static mappedBy = [
-    courses:'student',
-    classAtts:'student'
+    courses:"student",
+    classAtts:"student"
   ]
 
   static mapping = {
