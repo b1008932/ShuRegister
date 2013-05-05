@@ -19,17 +19,17 @@ def database_course = Course.findByCourseCode('2222db') ?: new Course(courseCode
 def webArch_monday = RegClass.findByCourseAndName(web_arch_course, 'WebArch-Mondays') ?: 
                                                                     new RegClass(name:'WebArch-Mondays',
                                                                        classInstructor:james_instructor , 
-                                                                         course:web_arch_course).save(); 
+                                                                         course:web_arch_course, code:'webarchone').save(); 
 
 def webArch_tuesday = RegClass.findByCourseAndName(web_arch_course, 'WebArch-Tuesday') ?: 
                                                                     new RegClass(name:'WebArch-Tuesday',
                                                                        classInstructor:james_instructor , 
-                                                                         course:web_arch_course).save();
+                                                                         course:web_arch_course, code:'webarchtwo').save();
 
 def database_thursday = RegClass.findByCourseAndName(database_course, 'Database-Thursday') ?: 
                                                                     new RegClass(name:'Database-Thursday',
                                                                        classInstructor:ash_instructor , 
-                                                                         course:database_course).save();
+                                                                         course:database_course, code:'databaseone').save();
 
 def student_a = Student.findByStudentNumber('b1008') ?: new Student(studentNumber:'b1008', fullStudentName:'John Paul',
                                                                          notes:'John Paul Monday WebArch').save();

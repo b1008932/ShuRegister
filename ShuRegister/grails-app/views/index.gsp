@@ -10,6 +10,6 @@
 <p> This is the Shu Register Application </p>
 <p>
 <g:link controller="Instructor"> Manage Instructors</g:link>
-<g:link controller="ClassesController"> Classes</g:link>
+<g:link controller="something"> Sign Into A Selected Class</g:link>
 	</body>
 </html>

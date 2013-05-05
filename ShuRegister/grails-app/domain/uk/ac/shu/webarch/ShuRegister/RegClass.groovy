@@ -11,11 +11,14 @@ Course course
 
 Set enrolledStudents
 
+String code
 
-static hasMany = [enrolledStudents: Enrollment
+Set registrationSheets
+
+static hasMany = [enrolledStudents: Enrollment, registrationSheets:RegistrationSheet
 ]
 
-static mappedBy =[enrolledStudents: "regClass"
+static mappedBy =[enrolledStudents: "regClass", registrationSheets:'regClass'
 ]
 
     static constraints = {

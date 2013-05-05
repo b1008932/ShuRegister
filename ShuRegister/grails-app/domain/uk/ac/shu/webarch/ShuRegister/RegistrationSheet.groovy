@@ -2,6 +2,10 @@ package uk.ac.shu.webarch.ShuRegister
 
 class RegistrationSheet {
 
+RegClass regClass
+
+String shortcode
+
 Course course
 
 Date sheetDate
@@ -12,20 +16,19 @@ Set signatories
 
 static hasMany = [signatories: RegisterEntry ]
 
-static mappedBy = [signatories: "registrationSheet"]
+static mappedBy = [signatories: "regSheet"]
 
 
 static contraints = {
 course(nullable:false, blank:false);
 sheetDate(nullable:false, blank:false);
 notes(nullable:true, blank:true);
+shortcode(nullable:false, blank:false);
 }
 
 
 static mapping = {
-table "Course_Register_sheet" 
-course column: "course_fk"
-notes column: "course_desc" , type:"text"
+
 }
 }
 

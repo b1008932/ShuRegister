@@ -3,29 +3,28 @@ package uk.ac.shu.webarch.ShuRegister
 import grails.converters.*
 import uk.ac.shu.webarch.ShuRegister.*;
 
-
-class ClassesController {
+class ClassnameController {
 
   def index() { 
 
     def result=[:]
 
-    result.classList = []
+      result.course = []
 
-    RegClass.findAll().each { cls ->
-      result.classList.add([instructorName:cls.classInstructor.name,
-                            courseCode:cls.course.courseCode, 
-                            courseName:cls.course.courseName,
-                            classCode:cls.code, 
-                            className:cls.name])
+    RegClass.findByCourseCode(params.courseCode).each
+    { cls ->
+      result.course.add([courseCode:cls.course.courseCode, 
+                            courseName:cls.course.courseName])
     }
+
+
 
     withFormat {
       html result
       xml { render result as XML }
       json { render result as JSON }
     }
-  }
+ }
 
   def courseHome() {
     println("ClassesController::courseHome ${params}");

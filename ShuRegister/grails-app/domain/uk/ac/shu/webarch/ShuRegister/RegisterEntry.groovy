@@ -4,7 +4,7 @@ class RegisterEntry  {
 
 Student student
 
-RegistrationSheet registrationSheet
+RegistrationSheet regSheet
 
 Long timestamp
 
@@ -16,7 +16,7 @@ timestamp(nullable:false, blank:false);
 static mapping = {
 table "student_register_entry"
 student column: "student_fk"
-registrationSheet column: "registration_sheet_fk"
+regSheet column: "registration_sheet_fk"
 }
 }
 
