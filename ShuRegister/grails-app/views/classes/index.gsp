@@ -1,6 +1,6 @@
 <html>
  <body>
-This is classes::index.gsp
+Classes<br/>
 
 <table>
  <thead>
@@ -13,13 +13,14 @@ This is classes::index.gsp
      <tbody>
       <g:each in="${classes}" var="c">
     <tr>
-<td>${c.courseName}</td>
-<td>${c.className}</td>
-<td>${c.instructorName}</td>
+<td><g:link controller="Course">${c.courseName}</g:link></td> 
+<td><g:link controller="RegClass">${c.className}</g:link></td>
+<td><g:link controller="Instructor">${c.instructorName}</g:link></td>
    </tr>
      </g:each>
      </tbody>
 </table>
+
  </body>
 </html>
  
