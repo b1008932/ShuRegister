@@ -1,6 +1,6 @@
 package uk.ac.shu.webarch.ShuRegister
 
-
+/* This is the Student class */
 class Student {
 
   String fullStudentName

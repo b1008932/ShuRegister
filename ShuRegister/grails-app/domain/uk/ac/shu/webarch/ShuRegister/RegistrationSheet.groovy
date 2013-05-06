@@ -1,7 +1,9 @@
 package uk.ac.shu.webarch.ShuRegister
 
+/* This is the Registration sheet class */
 class RegistrationSheet {
 
+/* This is the attributes for the regsheet class */
 RegClass regClass
 
 String shortcode

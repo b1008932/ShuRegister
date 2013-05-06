@@ -1,8 +1,9 @@
 package uk.ac.shu.webarch.ShuRegister
 
-
+/* The word Class is a used word so i have called it RegClass  */
 class RegClass {
 
+/* This is the Attributes for Class */
 String name
 
 Instructor classInstructor
@@ -15,7 +16,7 @@ String code
 
 Set registrationSheets
 
-
+/*This links the Class to Enrollment and Registration sheet */
 static hasMany = [enrolledStudents: Enrollment, registrationSheets:RegistrationSheet
 ]
 

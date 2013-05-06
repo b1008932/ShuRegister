@@ -1,7 +1,9 @@
 package uk.ac.shu.webarch.ShuRegister
 
+/* This is the Register Entry class */
 class RegisterEntry  {
 
+/* This is the attributes for the Register Entry class */
 Student student
 
 RegistrationSheet regSheet

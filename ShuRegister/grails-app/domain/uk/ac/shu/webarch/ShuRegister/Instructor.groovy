@@ -1,6 +1,10 @@
 package uk.ac.shu.webarch.ShuRegister
 
+/* The teachers of the class*/
+
 class Instructor {
+
+/* Attributes for the instructor class */
 
 String name
 String staffId

@@ -1,6 +1,10 @@
 package uk.ac.shu.webarch.ShuRegister
 
+/*Enrollment class */
+
 class Enrollment {
+
+/* attributes for the Enrollment class*/
 
 Student student
 RegClass regClass
