@@ -4,7 +4,7 @@ class RegistrationSheet {
 
 RegClass regClass
 
-String Shortcode
+String shortcode
 
 Course course
 
